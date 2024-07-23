@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+        }
+        
+        main {
+            height: 80vh;
+            display: flex;
+            align-items: center;    
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            height: 200px;
+            width: 600px;
+            background-color: rgb(236, 236, 236);
+            border-radius: 10px;
+        }
+
+        input[type="text"] {
+            width: 220px;
+            margin-left: auto;
+            margin-left: 8px;
+            padding-left: 8px;
+        }
+
+        .row {
+            display: flex;
+            margin-top: 16px;
+        }
+
+        button[type="submit"] {
+            margin-top: 20px;
+        }
+
+    </style>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form class="form">
+                <div class="row">
+                    <label for="idbin">Número em binário:</label>
+                    <input type="text" name="" id="idbin" placeholder="Digite um número na forma binária">
+                </div>
+                <div class="row">
+                    <label for="idres">Número em decimal:</label>
+                    <input type="text" name="" id="idres" readonly>
+                </div>
+                <button type="submit">Converter!</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
